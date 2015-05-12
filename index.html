@@ -95,6 +95,18 @@ You need to restart Visual Studio Code for the PATH settings to work.</li>
 
 <ul>
 <li>Visual Studio Code is currently only available for 64-bit Linux on Intel processors.</li>
+<li>You need to change the file ~/.settings/tasks.json to this:</li>
+</ul>
+
+<pre><code>    {
+        "version": "0.1.0",
+        "command": "xbuild,
+        "args": ["CivOne.csproj"]
+    }
+</code></pre>
+
+<ul>
+<li>To compile the project, press Ctrl+Shift+B.</li>
 <li>You can run and debug, the project by pressing F5, or by clicking the Debug icon in the toolbar (left) and pressing the Play button.</li>
 </ul>
 
