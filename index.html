@@ -46,81 +46,19 @@
 I will be merging my old code with the new CivOne project this week.</p>
 
 <h2>
-<a id="how-to-buildrun-civone" class="anchor" href="#how-to-buildrun-civone" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to build/run CivOne?</h2>
-
-<p>CivOne is being developed for .NET 4.0/Mono and it is intended to run on Windows, MacOS X and Linux. To build/run CivOne, you need the following:</p>
-
-<ul>
-<li>Visual Studio Code: <a href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>
-</li>
-<li>.NET Framework 4.0 (Windows only): <a href="https://www.microsoft.com/en-us/download/details.aspx?id=17851">https://www.microsoft.com/en-us/download/details.aspx?id=17851</a>
-</li>
-<li>Mono (Linux, MacOS, optional on Windows): <a href="http://www.mono-project.com/">http://www.mono-project.com/</a>
-</li>
-</ul>
-
-<p>After you've downloaded and installed the proper tools you can download or clone CivOne.
-In Visual Studio Code, choose File &gt; Open Folder...
-Choose the folder where you downloaded CivOne.
-Now follow the platform specific instructions.</p>
+<a id="faq" class="anchor" href="#faq" aria-hidden="true"><span class="octicon octicon-link"></span></a>FAQ</h2>
 
 <h3>
-<a id="windows" class="anchor" href="#windows" aria-hidden="true"><span class="octicon octicon-link"></span></a>Windows</h3>
+<a id="how-to-buildrun-civone" class="anchor" href="#how-to-buildrun-civone" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to build/run CivOne?</h3>
 
-<ul>
-<li>Debugging is not yet supported in Windows.</li>
-<li>I have not tested this project in Visual Studio, only in Visual Studio Code, but it will probably work in Visual Studio without any issues.</li>
-<li>You can change the compiler by editing the "args" setting in ~/.settings/tasks.json. You can choose msbuild (.NET) or xbuild (Mono).</li>
-<li>You should have a PATH reference to msbuild (for .NET) or xbuild (for Mono). Open Computer Properties &gt; Advanced system settings &gt; Enviromental variables.
-
-<ul>
-<li>msbuild: Add "C:\Program Files (x86)\MSBuild\12.0\Bin" (or similar, try to find MSBuild.exe in explorer) to the PATH variable</li>
-<li>xbuild: Add "C:\Program Files (x86)\Mono\bin" (or similar, try to find xbuild.bat in explorer) to the PATH variable
-You need to restart Visual Studio Code for the PATH settings to work.</li>
-</ul>
-</li>
-<li>To build, press Ctrl+Shift+B</li>
-<li>To run, press Ctrl+Shift+T</li>
-<li>Alternatively, you can run build.bat from the command-line:
-
-<ul>
-<li>To compile: build [msbuild|xbuild] build</li>
-<li>To run: build [msbuild|xbuild] run</li>
-</ul>
-</li>
-</ul>
-
-<h3>
-<a id="linux" class="anchor" href="#linux" aria-hidden="true"><span class="octicon octicon-link"></span></a>Linux</h3>
-
-<ul>
-<li>Visual Studio Code is currently only available for 64-bit Linux on Intel processors.</li>
-<li>You need to change the file ~/.settings/tasks.json to this:</li>
-</ul>
-
-<pre><code>    {
-        "version": "0.1.0",
-        "command": "xbuild,
-        "args": ["CivOne.csproj"]
-    }
-</code></pre>
-
-<ul>
-<li>To compile the project, press Ctrl+Shift+B.</li>
-<li>You can run and debug, the project by pressing F5, or by clicking the Debug icon in the toolbar (left) and pressing the Play button.</li>
-</ul>
-
-<h3>
-<a id="macos-x" class="anchor" href="#macos-x" aria-hidden="true"><span class="octicon octicon-link"></span></a>MacOS X</h3>
-
-<p>I do not own a Mac so I can not test this at the moment. If you've managed to get the project running on MacOS, please let me know how you did it so I can add instructions to the website.</p>
-
-<hr>
+<p>Please refer to the <a href="https://github.com/SWY1985/CivOne/wiki/How-to-build-run-CivOne%3F">Wiki page</a>.</p>
 
 <h2>
 <a id="contact" class="anchor" href="#contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contact</h2>
 
 <p>You can contact me/discuss CivOne in the forum thread on Civfanatics.</p>
+
+<hr>
 
 <h2>
 <a id="links" class="anchor" href="#links" aria-hidden="true"><span class="octicon octicon-link"></span></a>Links</h2>
